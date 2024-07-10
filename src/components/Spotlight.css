@@ -1,0 +1,34 @@
+.card-spotlight-effect {
+    position: relative;
+    width: 60rem;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 0.875rem;
+    border: 1px solid #374151;
+    background: #182a2e;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-spotlight-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 60rem;
+    height: 30rem;
+    background-color: transparent;
+    opacity: 1;
+    background-image: linear-gradient(#182a2e 1px, transparent 1px),
+        linear-gradient(to right, #182a2e 1px, transparent 1px);
+
+    background-size: 20px 20px;
+    z-index: 2;
+}
+
+.spotlight {
+    pointer-events: none;
+    position: absolute;
+    inset: -1px;
+    opacity: 0;
+    transition: opacity 300ms;
+    z-index: 1;
+}
