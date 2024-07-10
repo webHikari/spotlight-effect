@@ -48,7 +48,7 @@ const Spotlight = () => {
                 className="spotlight"
                 style={{
                     opacity,
-                    background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.06), transparent 40%)`,
+                    background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(120,120,120, .5), transparent 40%)`,
                 }}
             />
         </div>
